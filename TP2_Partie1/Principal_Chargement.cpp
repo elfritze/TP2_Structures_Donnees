@@ -32,7 +32,7 @@ void chargerDictionnaire(std::ifstream &fichier)
     char *ptr;              /* un pointeur de service */
     int posT, posD; /* pour identifier la position d'un tilde ou d'un double-point(:) */
     bool contexte;  /* indique la présence d'un contexte entre () juste après le mot original */
-
+	char *saveptr;
     /* Vérifier si le fichier est correctement ouvert */
     if (fichier == NULL)
     {   
@@ -80,19 +80,19 @@ void chargerDictionnaire(std::ifstream &fichier)
         }
 
         /* Aller chercher le mot original */
-        mot = strtok(ligne, "\t");
+        mot = strtok_s(ligne, "\t",&saveptr);
         
         /* Passer le contexte s'il y a lieu */
         if (contexte == true)
         {
-            ptr = strtok(NULL, "()");
+            ptr = strtok_s(NULL, "()",&saveptr);
         }
 
         /* Traiter les cas comme celui-ci :                                                           */
         /* a	un(e): ~ book = un livre. 2.(instead of number one) ~ year ago; il y a un an[Article] */
         if (posD < posT)
         {
-            motTraduit = strtok(NULL, ":");
+            motTraduit = strtok_s(NULL, ":",&saveptr);
         }
 
         else
@@ -101,13 +101,13 @@ void chargerDictionnaire(std::ifstream &fichier)
             /* abode	of no fixed ~ :sans domicile fixe[Noun] */
             if (posT < posD)
             {
-                ptr = strtok(NULL, ":");
-                motTraduit = strtok(NULL, "([,;\n");
+                ptr = strtok_s(NULL, ":",&saveptr);
+                motTraduit = strtok_s(NULL, "([,;\n",&saveptr);
             }
             else
             {
                 /* obtenir la traduction */
-                motTraduit = strtok(NULL, "([,;\n");
+                motTraduit = strtok_s(NULL, "([,;\n",&saveptr);
             }
         }
 

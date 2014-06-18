@@ -151,7 +151,7 @@ private:
 
 	    int hauteur;							// La hauteur de ce noeud (afin de maintenir l'équilibre de l'arbre AVL)
 
-		// Vous pouvez ajouter ici un contructeur de NoeudDictionnaire
+		// Vous pouvez ajouter ici un constructeur de NoeudDictionnaire
 	};
 
    typedef NoeudDictionnaire * elem;
