@@ -1,4 +1,4 @@
-2442			
+2438			
 Abbott, Ursula K	(530) 752-7325	(530) 752-8960	sandra.alexander@ucop.edu
 Abplanalp, Hans	(536) 752-1366	(530) 752-8960	habplanalp@ucdavis.edu
 Acevedo, Myriam	(959) 683-6491	(909) 788-2615	habplanalp@ucdavis.edu
@@ -828,8 +828,7 @@ Green, Paul	(539) 754-9967	(530) 752-0382	bwfalk@ucdavis.edu
 Green, Richard D	(530) 752-1534	(530) 752-5614	rhfalk@ucdavis.edu
 Green, Robert	(919) 787-5717	(909) 787-4437	jfallon@ucdavis.edu
 Greenwood, Aaron	(989) 787-3397	(909) 787-3590	trfamula@ucdavis.edu
-Greer P.h.D., Christopher	(539) 458-9579	(530) 458-4625	twfan@ucdavis.edu
-Greer P.h.D., Christopher	(531) 458-1571	(530) 458-4625	cdalameda@ucdavis.edu
+Greer, Christopher	(539) 458-9579	(530) 458-4625	cgreer@ucdavis.edu
 Gregory, Peggy	(989) 787-8837	(559) 582-5166	egfarinias@ucdavis.edu
 Grey, Robert D	(534) 752-1553	(530) 752-1449	jlfarley@ucdavis.edu
 Griego, Pauline	(530) 752-1515	(530) 752-5614	wfarmer@citrus.ucr.edu
@@ -904,8 +903,7 @@ Harper, Lawrence	(530) 752-3624	(530) 752-5660	rdhdingle@ucdavis.edu
 Harris, Charlene	(510) 987-0086	(510) 587-6416	travis.dinoff@ucr.edu
 Harris, Linda J	(530) 754-9485	(530) 752-4759	dadipiet@ucdavis.edu
 Harris, Linda Oristine	(510) 987-0085	(510) 839-2623	ditomaso@vegmail.ucdavis.edu
-Harris, Richard R	(510) 642-2360	(510) 642-6632	gwynz@ucrac1.ucr.edu
-Harris, Richard R	(530) 752-4042	(530) 752-1819	mhdixon@ucdavis.edu
+Harris, Richard R	(510) 642-2360	(510) 642-6632	rharris@ucrac1.ucr.edu
 Harris, Rick	(539) 752-2914	(530) 752-3085	fkdlott@ucdavis.edu
 Harrison, Patricia	(530) 752-6411	(530) 752-1392	dodd@nature.berkeley.edu
 Harrison, Susan	(530) 752-7110	(530) 752-3350	allan.dodds@ucr.edu
@@ -1672,8 +1670,7 @@ Parker, Melanie	(510) 987-0619	(510) 832-8612	alexander.glazer@ucop.edu
 Parker, Scott	(858) 495-5190	(858) 694-2849	goldman@are.berkeley.edu
 Parmeter, John	(510) 642-4763	(510) 642-6632	agoldstein@nature.berkeley.edu
 Parnell, Saundra J	(323) 838-8353	(323) 838-7449	pgoldston@ucdavis.edu
-Parra, Gloria	(515) 987-9792	(510) 839-2623	dagolino@ucdavis.edu
-Parra, Gloria	(516) 987-9792	(510) 839-2623	tlgolonka@ucdavis.edu
+Parra, Gloria	(515) 987-9792	(510) 839-2623	gparra@ucdavis.edu
 Parreira, Marci	(209) 325-7403	(209) 722-8856	wr.gomes@ucop.edu
 Parrella, Michael P	(530) 752-8473	(530) 752-9049	elizabeth.gomez@ucop.edu
 Partridge, Priscilla	(831) 763-8747	(831) 763-8006	FLORAMEX@ucrac1.ucr.edu
@@ -2032,8 +2029,7 @@ Smith, Marianne	(534) 628-5495	(530) 628-4171	agroeco3@nature.berkeley.edu
 Smith, Martin H	(530) 752-6894	(530) 752-7563	cetuolumne@ucdavis.edu
 Smith, Michael P	(530) 752-2243	(530) 752-5660	malvarez@ucdavis.edu
 Smith, Rhonda J	(767) 565-2621	(707) 565-2623	chrisa@ucrac1.ucr.edu
-Smith, Richard	(831) 759-7357	(831) 758-3018	nkamy@nature.berkeley.edu
-Smith, Richard	(530) 752-4165	(530) 752-2196	earthy@nature.berkeley.edu
+Smith, Richard	(831) 759-7357	(831) 758-3018	rsmith@nature.berkeley.edu
 Smith, Sherri L.	(530) 752-5355	(530) 752-5451	sbsmith@ucdavis.edu
 Smith, Wendy	(760) 863-8293	(760) 775-0600	ceindio@ucdavis.edu
 Smith-Rems, Vanessa	(909) 787-2052	(909) 787-4675	vksmithrems@ucdavis.edu
@@ -2280,7 +2276,7 @@ Wallender, Wesley W	(530) 752-0688	(530) 752-5262	wwwallender@ucdavis.edu
 Walling, Linda L	(919) 787-4687	(909) 787-4437	lwalling@ucrac1.ucr.edu
 Walsh, David	(747) 565-2621	(707) 565-2623	dhwalsh@ucdavis.edu
 Walton, William E	(909) 787-3919	(909) 787-3086	william.walton@ucr.edu
-Wandesforde-Smith,	(530) 752-3077	(530) 752-3350	gawsmith@ucdavis.edu
+Wandesforde-Smith, Geoffrey	(530) 752-3077	(530) 752-3350	gawsmith@ucdavis.edu
 Wangdu, Lobsang	(510) 987-0106	(510) 987-2659	Lobsang.Wangdu@ucop.edu
 Ward, Michael	(510) 642-7628	(510) 643-8319	ward@are.berkeley.edu
 Ward, Philip S	(530) 752-0486	(530) 752-1537	psward@ucdavis.edu
