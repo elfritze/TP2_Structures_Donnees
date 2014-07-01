@@ -33,7 +33,6 @@ typedef struct Personne {
   std::string tel;            /*!< Le numéro de téléphone de la personne */
   std::string fax;            /*!< Le numéro de fax de la personne */
   std::string courriel;       /*!< L'adresse courriel de la personne */
-  std::string infos() const;  /*!< Fonction pour afficher les informations d'une personne */
 } Employe;
 
 /**
@@ -78,6 +77,8 @@ public:
    Employe trouverAvecNomPrenom(const std::string & s, int &nbCollisions);
 
    Employe trouverAvecTelephone(const std::string & s, int &nbCollisions);
+
+   std::string infosEmploye(const Employe& e) const;
 
 private:
    /**

@@ -47,14 +47,14 @@ int main()
       Employe t1 = bottin.trouverAvecTelephone("(269) 533-5695", nbCollisions);
       cout << "Recherche de " << t1.tel << endl;
       cout << "------------------------------------------------" << endl;
-      cout << t1.infos() << endl;
+      cout << bottin.infosEmploye(t1) << endl;
       cout << "Le nombre de collisions rencontrées = " << nbCollisions << endl;
       cout << endl << endl;
       //
       Employe t2 = bottin.trouverAvecTelephone("(559) 884-6422", nbCollisions);
       cout << "Recherche de " << t2.tel << endl;
       cout << "------------------------------------------------" << endl;
-      cout << t2.infos() << endl;
+      cout << bottin.infosEmploye(t2) << endl;
       cout << "Le nombre de collisions rencontrées = " << nbCollisions << endl;
       cout << endl << endl;
 
@@ -64,14 +64,14 @@ int main()
       Employe n1 = bottin.trouverAvecNomPrenom("Henderson, Patricia", nbCollisions);
       cout << "Recherche de " << n1.nom << ", " << n1.prenom << endl;
       cout << "------------------------------------------------" << endl;
-      cout << n1.infos() << endl;
+      cout << bottin.infosEmploye(n1) << endl;
       cout << "Le nombre de collisions rencontrées = " << nbCollisions << endl;
       cout << endl << endl;
       //
       Employe n2 = bottin.trouverAvecNomPrenom("Zepeda, Manuel", nbCollisions);
       cout << "Recherche de " << n2.nom << ", " << n2.prenom << endl;
       cout << "------------------------------------------------" << endl;
-      cout << n2.infos() << endl;
+      cout << bottin.infosEmploye(n2) << endl;
       cout << "Le nombre de collisions rencontrées = " << nbCollisions << endl;
       cout << endl << endl;
 
@@ -94,7 +94,7 @@ int main()
       // Récupération des informations de l'employé
       //
       Employe a1 = bottin.trouverAvecTelephone("(123) 456-7890", nbCollisions);
-      cout << a1.infos() << endl;
+      cout << bottin.infosEmploye(a1) << endl;
       cout << "Le nombre de collisions rencontrées = " << nbCollisions << endl;
       cout << endl << endl;
 
@@ -120,7 +120,7 @@ int main()
       Employe n3 = bottin.trouverAvecNomPrenom("Henderson, Patricia", nbCollisions);
       cout << "Recherche de " << n3.nom << ", " << n3.prenom << endl;
       cout << "------------------------------------------------" << endl;
-      cout << n3.infos() << endl;
+      cout << bottin.infosEmploye(n3) << endl;
       cout << "Le nombre de collisions rencontrées = " << nbCollisions << endl;
       cout << endl << endl;
 

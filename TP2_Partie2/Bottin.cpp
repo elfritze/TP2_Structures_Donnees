@@ -196,15 +196,15 @@ Employe Bottin::trouverAvecTelephone(const std::string & s, int &nbCollisions)
    return e;
 }
 
-string Personne::infos() const
+string Bottin::infosEmploye(const Employe& e) const
 {
      ostringstream infos;
 
-     infos << "Nom       : " << nom << "\n";
-     infos << "Prénom    : " << prenom << "\n";
-     infos << "Téléphone : " << tel << "\n";
-     infos << "Fax       : " << fax << "\n";
-     infos << "Courriel  : " << courriel << "\n";
+     infos << "Nom       : " << e.nom << "\n";
+     infos << "Prénom    : " << e.prenom << "\n";
+     infos << "Téléphone : " << e.tel << "\n";
+     infos << "Fax       : " << e.fax << "\n";
+     infos << "Courriel  : " << e.courriel << "\n";
 
      return infos.str();
 }
