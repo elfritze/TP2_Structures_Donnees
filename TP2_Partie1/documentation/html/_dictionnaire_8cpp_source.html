@@ -1,0 +1,935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>TP2_StructureDonnees:  Fichier source de C:/Users/Eric/Documents/GitHub/TP2_Structures_Donnees/TP2_Partie1/Dictionnaire.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="images.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TP2_StructureDonnees
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Dictionnaire</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- GÃ©nÃ©rÃ© par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_dictionnaire_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Espaces de nommage</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Dictionnaire.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_dictionnaire_8cpp.html">Aller Ã  la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="_dictionnaire_8cpp.html#af08ec37a8c99d747fb60fa15bc28678b">    9</a></span>&#160;<span class="preprocessor">#define _CRT_SECURE_NO_WARNINGS</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_dictionnaire_8h.html">Dictionnaire.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespace_t_p2_p1.html">   12</a></span>&#160;<span class="keyword">namespace </span>TP2P1</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_t_p2_p1_1_1_dictionnaire.html#a1fac45a536b034e0f9c18600159bfae4">   18</a></span>&#160;    <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a1fac45a536b034e0f9c18600159bfae4">Dictionnaire:: Dictionnaire</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        racine = 0; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        cpt=0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_t_p2_p1_1_1_dictionnaire.html#a1a2e7ea3899a2cfe74451a695291fb3a">   28</a></span>&#160;    <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a1fac45a536b034e0f9c18600159bfae4">Dictionnaire::Dictionnaire</a>(std::ifstream &amp;fichier)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        racine = 0; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        cpt=0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        chargerDictionnaire(fichier);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_t_p2_p1_1_1_dictionnaire.html#ab8f2a691b729b54115cd40256aa2ec00">   39</a></span>&#160;    <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#ab8f2a691b729b54115cd40256aa2ec00">Dictionnaire::~Dictionnaire</a>()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        _auxDetruire(racine);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_t_p2_p1_1_1_dictionnaire.html#a2fe841290d727a217fb884825bb736b7">   49</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a2fe841290d727a217fb884825bb736b7">Dictionnaire::ajouteMot</a>(<span class="keyword">const</span> std ::string&amp; motOriginal, <span class="keyword">const</span> std ::string&amp; motTraduit)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        _auxInserer(racine, motOriginal,motTraduit);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_t_p2_p1_1_1_dictionnaire.html#addc784e06d941ed8ab530da2b02e72fe">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#addc784e06d941ed8ab530da2b02e72fe">Dictionnaire::supprimeMot</a>(<span class="keyword">const</span> std::string&amp; motOriginal)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span>( racine == 0 )</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;enlever: Le dictionnaire est vide\n&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span>( _auxAppartient(racine, motOriginal) == 0 )</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;enlever: Le mot ne fait pas partie du dictionnaire\n&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        _auxEnlever(racine, motOriginal);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_t_p2_p1_1_1_dictionnaire.html#acc8506e31ea041e6b5de77cb9c2efec8">   74</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#acc8506e31ea041e6b5de77cb9c2efec8">Dictionnaire::appartient</a>(<span class="keyword">const</span> std::string &amp;mot)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> _auxAppartient(racine, mot)!=0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_t_p2_p1_1_1_dictionnaire.html#aecfb98d1a69ab5a3adb9e6e649d46b9d">   83</a></span>&#160;    std::vector&lt;std::string&gt; <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#aecfb98d1a69ab5a3adb9e6e649d46b9d">Dictionnaire::suggereCorrections</a>(<span class="keyword">const</span> std::string&amp; motMalEcrit)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">//On met une sensibilité de correction minimale.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">double</span> min = .4;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        std::vector&lt;std::string&gt; corrections;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        _auxsuggereCorrections(racine, motMalEcrit,min,corrections);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> corrections;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_t_p2_p1_1_1_dictionnaire.html#a4cd52bdf5bfaaea2eb7c814bd96ba8c8">   97</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a4cd52bdf5bfaaea2eb7c814bd96ba8c8">Dictionnaire::similitude</a>(<span class="keyword">const</span> std ::string&amp; mot1, <span class="keyword">const</span> std ::string&amp; mot2)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">int</span> j;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">bool</span> streak = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">double</span> similarity = 0.;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        std::string bigger = mot1.size() &gt; mot2.size() ? mot1 : mot2;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::string smaller = mot1.size() &gt; mot2.size() ? mot2 : mot1;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment">//On parcoure chacune des lettre du plus petit mot</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">for</span> (j=0; j &lt; smaller.size(); j++)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="comment">//On parcoure le reste du mot à partir de la lettre actuelle</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; smaller.size() - j;i++){</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="comment">//on teste si mot partiel est trouvable dans le plus grand mot.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                std::string motyo = smaller.substr(j,i + 1);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">if</span>(bigger.find(motyo) != std::string::npos){</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    similarity++;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">double</span> score = similarity  / (smaller.size() * smaller.size());</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> score;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_t_p2_p1_1_1_dictionnaire.html#a0912cee29c757ad7ea3456c7ea6d3a0e">  129</a></span>&#160;    std::vector&lt;std::string&gt; <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a0912cee29c757ad7ea3456c7ea6d3a0e">Dictionnaire::traduit</a>(<span class="keyword">const</span> std ::string&amp; mot){</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        std::vector&lt;std::string&gt; traductions = _auxTraduit(racine,mot);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> traductions;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    std::vector&lt;std::string&gt; &amp; Dictionnaire::_auxTraduit( elem &amp; arbre,<span class="keyword">const</span> std::string&amp; mot)</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">//Si l&#39;arbre est vide</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">if</span>(arbre == 0){</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            std::vector&lt;std::string&gt; traductions;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">return</span> traductions;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">if</span>(arbre-&gt;mot == mot) <span class="comment">//Si le mot est trouvé             return arbre-&gt;traductions;
+        else if(arbre-&gt;mot &gt; mot)
+            _auxTraduit(arbre-&gt;gauche, mot);
+        else
+            _auxTraduit(arbre-&gt;droite, mot);
+    }
+
+    /**
+     * \fn  Dictionnaire::_auxsuggereCorrections(elem &amp; arbre,const std::string&amp; motMalEcrit,double&amp; min,std::vector&lt;std::string&gt; &amp;corrections)
+     * \param[in] arbre : Noeud dans le dictionnaire
+     * \param[in] motMalEcrit : Mot à corriger
+      * \param[in] min : Sensibilité pour la comparaison des mots
+       * \param[in] corrections : Liste des corrections à remplir
+     */
+    void Dictionnaire::_auxsuggereCorrections(elem &amp; arbre,const std::string&amp; motMalEcrit,double&amp; min,std::vector&lt;std::string&gt; &amp;corrections)
+        {
+            if (arbre == 0)
+            {
+                return;
+            }
+            if ( similitude(arbre-&gt;mot,motMalEcrit) &gt; .4  ) // Si la similitude depasse la sensibilité minimal on considère le mot
+            {
+                if(corrections.size() &gt;= 10) // Si déjà 10 corrections sont trouvées
+                {
+                    if( similitude(arbre-&gt;mot,motMalEcrit) &gt; min) //Si la similitude du mot actuel est plus grande la minimale de la liste de corrections
+                    {
+                        int i = 0;
+                        bool found = false;
+                        while(!found &amp;&amp; i &lt; corrections.size())
+                        {
+                            // On trouve une correction avec la sensibilité minimale pour la remplacer
+                            if(similitude(corrections.at(i),motMalEcrit) == min){
+                                corrections.at(i) = arbre-&gt;mot;
+                                found = true; 
+                            }
+
+                            i++;
+                        }
+                        min =  similitude(arbre-&gt;mot,motMalEcrit);
+                    }
+                }
+                else
+                    corrections.push_back(arbre-&gt;mot); // On ajoute la correction à la liste
+            }
+
+
+            _auxsuggereCorrections(arbre-&gt;gauche, motMalEcrit,min,corrections);
+        
+            _auxsuggereCorrections(arbre-&gt;droite, motMalEcrit,min,corrections);
+
+        }
+
+
+    /**
+     * \fn  void Dictionnaire::_auxEnlever( elem &amp; arbre, const std::string&amp; mot)
+     * \param[in] arbre : Noeud dans le dictionnaire
+     * \param[in] mot : Mot à enlever
+     */
+    void Dictionnaire::_auxEnlever( elem &amp; arbre, const std::string&amp; mot)
+    {
+        if( arbre-&gt;mot.compare(mot) &gt;  0)
+            _auxEnlever( arbre-&gt;gauche, mot);
+
+        else if( arbre-&gt;mot.compare(mot) &lt; 0 )
+            _auxEnlever( arbre-&gt;droite, mot);
+
+        // si on se rend jusqu&#39;ici, c&#39;est qu&#39;on a trouvé le noeud
+        // qui contient la valeur recherchée
+        else if( arbre-&gt;gauche != 0 &amp;&amp; arbre-&gt;droite != 0 ) 
+        {
+            // deux enfants: il faut trouver la valeur suivante dans la
+            // séquence et la mettre à la place de la valeur du noeud actuel
+            
+            //chercher le noeud qui contient la valeur minimale dans le sous-arbre de droite
+            elem temp = arbre-&gt;droite;
+            while ( temp-&gt;gauche != 0) temp = temp-&gt;gauche;
+            arbre-&gt;mot = temp-&gt;mot;
+            _auxRetireMin( arbre-&gt;droite ); // Retirer minimum dans le sous-arbre droit
+        }
+        else
+        {
+            // le noeud n&#39;a aucun enfant ou qu&#39;un seul enfant, il suffit donc de retirer
+            // ce noeud et pointer sur l&#39;éventuel enfant 
+            elem vieuxNoeud = arbre;
+            arbre = ( arbre-&gt;gauche != 0 ) ? arbre-&gt;gauche : arbre-&gt;droite;  
+            delete vieuxNoeud;  
+            cpt--;
+        }   
+    }
+
+
+    /**
+     * \fn void Dictionnaire:: _auxRetireMin( elem &amp; arbre) const
+     * \param[in] arbre : Noeud dans le dictionnaire
+     */
+    void Dictionnaire:: _auxRetireMin( elem &amp; arbre) const
+    {
+        
+        if (arbre-&gt;gauche != 0)
+            _auxRetireMin(arbre-&gt;gauche );
+        else
+        {
+            elem tmp = arbre;
+            arbre = arbre-&gt;droite;
+            delete tmp;
+        }
+    }
+
+
+    /**
+     * \fn Dictionnaire::elem Dictionnaire::_auxAppartient(elem arbre, const std::string &amp;mot) const
+     * \param[in] arbre : Noeud dans le dictionnaire
+     * \param[in] mot : Mot à trouver
+     */
+     Dictionnaire::elem Dictionnaire::_auxAppartient(elem arbre, const std::string &amp;mot) const
+     {
+         if (arbre == 0)
+            return 0;
+
+         if ( arbre-&gt;mot.compare(mot) == 0  )
+            return arbre;
+
+        if ( arbre-&gt;mot.compare(mot) &gt; 0 )
+            return _auxAppartient(arbre-&gt;gauche, mot);
+        else
+            return _auxAppartient(arbre-&gt;droite, mot);
+        
+     }
+
+     /**
+     * \fn void Dictionnaire::_auxInserer(elem &amp;arbre, const std::string &amp;motOriginal, const std::string &amp;motTraduit)
+     * \param[in] arbre : Noeud dans le dictionnaire
+     * \param[in] motOriginal : Mot à insérer
+     * \param[in] motTraduit : Traduction possible
+     */
+    void Dictionnaire::_auxInserer(elem &amp;arbre, const std::string &amp;motOriginal, const std::string &amp;motTraduit)
+    {
+        //Si l&#39;arbre est vide
+        if (arbre == 0)
+        {
+            arbre = new NoeudDictionnaire(motOriginal,motTraduit);
+            cpt++;
+            return;
+        }
+        else if(arbre-&gt;mot.compare(motOriginal) == 0){ //Si le mot est déjà présent on insère seulement ses traductions
+            arbre-&gt;traductions.push_back(motTraduit);
+            return;
+        }
+        if( arbre-&gt;mot.compare(motOriginal) &gt; 0 ) //Sinon on insère a gauche ou a droite
+        {   _auxInserer(arbre-&gt;gauche, motOriginal,motTraduit);
+            if ((_hauteur(arbre-&gt;gauche) - _hauteur(arbre-&gt;droite)) == 2) //Équilibre
+            {
+                if (arbre-&gt;gauche-&gt;mot.compare(motOriginal) &gt; 0)
+                    _zigZigGauche(arbre);
+               else
+                    _zigZagGauche(arbre);
+            } 
+            else
+            {
+                arbre-&gt;hauteur = 1 + _maximum(_hauteur(arbre-&gt;gauche), _hauteur(arbre-&gt;droite));
+            }
+        }
+        else
+        {
+            _auxInserer(arbre-&gt;droite, motOriginal,motTraduit);
+            if ((_hauteur(arbre-&gt;droite) - _hauteur(arbre-&gt;gauche)) == 2)  //Équilibre
+            {
+                if ( arbre-&gt;droite-&gt;mot.compare(motOriginal) &lt;= 0) // pour le cas d&#39;un doublon
+                {
+                    _zigZigDroit(arbre);
+                } 
+                else
+                {
+                    _zigZagDroit(arbre);
+                }
+            } 
+            else
+            {
+                arbre-&gt;hauteur = 1 + _maximum(_hauteur(arbre-&gt;droite), _hauteur(arbre-&gt;gauche));
+            }
+        }
+    }
+
+
+    /**
+     * \fn int Dictionnaire:: _hauteur(elem noeud) const
+     * \param[in] noeud : Noeud dans le dictionnaire
+     */
+    int Dictionnaire:: _hauteur(elem noeud) const
+    {
+        if (noeud == 0)
+            return -1;
+        return noeud-&gt;hauteur;
+    }
+
+
+    /**
+     * \fn int Dictionnaire:: _maximum(int ent1, int ent2) const
+     * \param[in] ent1 : premier nombre
+      * \param[in] ent2 : deuxieme nombre
+     */
+    int Dictionnaire:: _maximum(int ent1, int ent2) const
+    {
+        if (ent1 &lt;= ent2)
+            return ent2;
+        else
+            return ent1;
+    }
+
+
+    /**
+     * \fn void Dictionnaire:: _zigZigGauche(elem &amp;K2)
+     * \param[in] K2 : Noeud du dictionnaire
+     */
+    void Dictionnaire:: _zigZigGauche(elem &amp;K2)
+    {
+        elem K1;
+
+        K1 = K2-&gt;gauche;
+        K2-&gt;gauche = K1-&gt;droite;
+        K1-&gt;droite = K2;
+        K2-&gt;hauteur = 1 + _maximum(_hauteur(K2-&gt;gauche), _hauteur(K2-&gt;droite));
+        K1-&gt;hauteur = 1 + _maximum(_hauteur(K1-&gt;gauche), K2-&gt;hauteur);
+
+        K2 = K1;
+    }
+
+    /**
+     * \fn void Dictionnaire:: _zigZigDroit(elem &amp;K2)
+     * \param[in] K2 : Noeud du dictionnaire
+     */
+    void Dictionnaire:: _zigZigDroit(elem &amp;K2)
+    {
+        elem K1;
+
+        K1 = K2-&gt;droite;
+        K2-&gt;droite = K1-&gt;gauche;
+        K1-&gt;gauche = K2;
+        K2-&gt;hauteur = 1 + _maximum(_hauteur(K2-&gt;droite), _hauteur(K2-&gt;gauche));
+        K1-&gt;hauteur = 1 + _maximum(_hauteur(K1-&gt;droite), K2-&gt;hauteur);
+        K2 = K1;
+    }
+
+    /**
+     * \fn void Dictionnaire:: _zigZagGauche(elem &amp;K3)
+     * \param[in] K2 : Noeud du dictionnaire
+     */
+    void Dictionnaire:: _zigZagGauche(elem &amp;K3)
+    {
+        _zigZigDroit(K3-&gt;gauche);
+        _zigZigGauche(K3);
+    }
+
+    /**
+     * \fn void Dictionnaire:: _zigZagDroit(elem &amp;K3)
+     * \param[in] K2 : Noeud du dictionnaire
+     */
+    void Dictionnaire:: _zigZagDroit(elem &amp; K3)
+    {
+        _zigZigGauche(K3-&gt;droite);
+        _zigZigDroit(K3);
+    }
+
+        /**
+     * \fn void  Dictionnaire::_auxDetruire(Dictionnaire::elem &amp;t)
+     *
+     * \param[in] t : Le sous-arbre à détruire
+     */
+    void  Dictionnaire::_auxDetruire(Dictionnaire::elem &amp;t)
+    {
+        if (t != 0)
+        {
+            _auxDetruire(t-&gt;gauche);
+            _auxDetruire(t-&gt;droite);
+            delete t;
+            cpt--;
+            t= 0;
+        }
+    }
+
+        /**
+     * \fn void Dictionnaire::chargerDictionnaire(std::ifstream &amp;fichier)
+     *
+     * \param[in] fichier : Le fichier à utiliser
+     */
+    void Dictionnaire::chargerDictionnaire(std::ifstream &amp;fichier)
+    {   
+        char ligne[200];  /* pour contenir une ligne lu dans le fichier */  
+        char *mot, *motTraduit; /* le mot dans la langue original et sa traduction */
+        char *ptr;              /* un pointeur de service */
+        int posT, posD; /* pour identifier la position d&#39;un tilde ou d&#39;un double-point(:) */
+        bool contexte;  /* indique la présence d&#39;un contexte entre () juste après le mot original */
+        char *saveptr;
+        /* Vérifier si le fichier est correctement ouvert */
+        if (fichier == NULL)
+        {   
+            return;
+        }
+
+        
+        /* Lire le fichier et ajouter les mots leur(s) traduction(s) */
+        std::cout &lt;&lt;  &quot; Chargement du dictionnaire... &quot; &lt;&lt;  std::endl;
+        while (!fichier. eof())
+        {
+            /* lecture d&#39;une ligne */
+            fichier.getline(ligne, 199);
+        
+            /* Ignorer les lignes d&#39;en-tête */
+            if (ligne[0] == &#39;#&#39;)
+            {
+                continue;
+            }
+
+            posT = 0;
+            posD = 0;
+
+            ptr = strchr(ligne, &#39;~&#39;);
+            if (ptr != NULL)
+            {
+                posT = (ptr - ligne) / sizeof(char);
+            }
+
+            ptr = strchr(ligne, &#39;:&#39;);
+            if (ptr != NULL)
+            {
+                posD = (ptr - ligne) / sizeof(char);
+            }
+
+            /* Vérifier s&#39;il y a un contexte entre parenthèses  */
+            /* tout de suite après le mot original              */
+            contexte = false;
+            ptr = strchr(ligne, &#39;\t&#39;);
+            if (ptr != NULL)
+            {
+                if (*(ptr + 1) == &#39;(&#39;)
+                {
+                    contexte = true;
+                }
+            }
+
+            /* Aller chercher le mot original */
+            mot = strtok(ligne, &quot;\t&quot;);
+        
+            /* Passer le contexte s&#39;il y a lieu */
+            if (contexte == true)
+            {
+                ptr = strtok(NULL, &quot;()&quot;);
+            }
+
+            /* Traiter les cas comme celui-ci :                                                           */
+            /* a    un(e): ~ book = un livre. 2.(instead of number one) ~ year ago; il y a un an[Article] */
+            if (posD &lt; posT)
+            {
+                motTraduit = strtok(NULL, &quot;:&quot;);
+            }
+
+            else
+            {
+                /* Traiter les cas comme celui-ci :                 */
+                /* abode    of no fixed ~ :sans domicile fixe[Noun] */
+                if (posT &lt; posD)
+                {
+                    ptr = strtok(NULL, &quot;:&quot;);
+                    motTraduit = strtok(NULL, &quot;([,;\n&quot;);
+                }
+                else
+                {
+                    /* obtenir la traduction */
+                    motTraduit = strtok(NULL, &quot;([,;\n&quot;);
+                }
+            }
+            
+            std::string sMotTraduit = motTraduit;
+            std::string sMot = mot;
+
+            ajouteMot(sMot,sMotTraduit);
+            
+   
+        }
+    }
+
+
+}//Fin du namespace
+</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">return</span> arbre-&gt;traductions;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(arbre-&gt;mot &gt; mot)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            _auxTraduit(arbre-&gt;gauche, mot);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            _auxTraduit(arbre-&gt;droite, mot);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">void</span> Dictionnaire::_auxsuggereCorrections(elem &amp; arbre,<span class="keyword">const</span> std::string&amp; motMalEcrit,<span class="keywordtype">double</span>&amp; min,std::vector&lt;std::string&gt; &amp;corrections)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> (arbre == 0)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a4cd52bdf5bfaaea2eb7c814bd96ba8c8">similitude</a>(arbre-&gt;mot,motMalEcrit) &gt; .4  ) <span class="comment">// Si la similitude depasse la sensibilité minimal on considère le mot</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="keywordflow">if</span>(corrections.size() &gt;= 10) <span class="comment">// Si déjà 10 corrections sont trouvées</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    <span class="keywordflow">if</span>( <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a4cd52bdf5bfaaea2eb7c814bd96ba8c8">similitude</a>(arbre-&gt;mot,motMalEcrit) &gt; min) <span class="comment">//Si la similitude du mot actuel est plus grande la minimale de la liste de corrections</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                        <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                        <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                        <span class="keywordflow">while</span>(!found &amp;&amp; i &lt; corrections.size())</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                        {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                            <span class="comment">// On trouve une correction avec la sensibilité minimale pour la remplacer</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                            <span class="keywordflow">if</span>(<a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a4cd52bdf5bfaaea2eb7c814bd96ba8c8">similitude</a>(corrections.at(i),motMalEcrit) == min){</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                corrections.at(i) = arbre-&gt;mot;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                found = <span class="keyword">true</span>; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                            }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                            i++;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                        min =  <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a4cd52bdf5bfaaea2eb7c814bd96ba8c8">similitude</a>(arbre-&gt;mot,motMalEcrit);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                    corrections.push_back(arbre-&gt;mot); <span class="comment">// On ajoute la correction à la liste</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            _auxsuggereCorrections(arbre-&gt;gauche, motMalEcrit,min,corrections);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            _auxsuggereCorrections(arbre-&gt;droite, motMalEcrit,min,corrections);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">void</span> Dictionnaire::_auxEnlever( elem &amp; arbre, <span class="keyword">const</span> std::string&amp; mot)</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">if</span>( arbre-&gt;mot.compare(mot) &gt;  0)</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            _auxEnlever( arbre-&gt;gauche, mot);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( arbre-&gt;mot.compare(mot) &lt; 0 )</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            _auxEnlever( arbre-&gt;droite, mot);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="comment">// si on se rend jusqu&#39;ici, c&#39;est qu&#39;on a trouvé le noeud</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="comment">// qui contient la valeur recherchée</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( arbre-&gt;gauche != 0 &amp;&amp; arbre-&gt;droite != 0 ) </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="comment">// deux enfants: il faut trouver la valeur suivante dans la</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="comment">// séquence et la mettre à la place de la valeur du noeud actuel</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="comment">//chercher le noeud qui contient la valeur minimale dans le sous-arbre de droite</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            elem temp = arbre-&gt;droite;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">while</span> ( temp-&gt;gauche != 0) temp = temp-&gt;gauche;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            arbre-&gt;mot = temp-&gt;mot;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            _auxRetireMin( arbre-&gt;droite ); <span class="comment">// Retirer minimum dans le sous-arbre droit</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="comment">// le noeud n&#39;a aucun enfant ou qu&#39;un seul enfant, il suffit donc de retirer</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="comment">// ce noeud et pointer sur l&#39;éventuel enfant </span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            elem vieuxNoeud = arbre;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            arbre = ( arbre-&gt;gauche != 0 ) ? arbre-&gt;gauche : arbre-&gt;droite;  </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keyword">delete</span> vieuxNoeud;  </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            cpt--;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }   </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">void</span> Dictionnaire:: _auxRetireMin( elem &amp; arbre)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">if</span> (arbre-&gt;gauche != 0)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            _auxRetireMin(arbre-&gt;gauche );</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            elem tmp = arbre;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            arbre = arbre-&gt;droite;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keyword">delete</span> tmp;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;     Dictionnaire::elem Dictionnaire::_auxAppartient(elem arbre, <span class="keyword">const</span> std::string &amp;mot)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">     </span>{</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;         <span class="keywordflow">if</span> (arbre == 0)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;         <span class="keywordflow">if</span> ( arbre-&gt;mot.compare(mot) == 0  )</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">return</span> arbre;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">if</span> ( arbre-&gt;mot.compare(mot) &gt; 0 )</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">return</span> _auxAppartient(arbre-&gt;gauche, mot);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="keywordflow">return</span> _auxAppartient(arbre-&gt;droite, mot);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;     }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordtype">void</span> Dictionnaire::_auxInserer(elem &amp;arbre, <span class="keyword">const</span> std::string &amp;motOriginal, <span class="keyword">const</span> std::string &amp;motTraduit)</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="comment">//Si l&#39;arbre est vide</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">if</span> (arbre == 0)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            arbre = <span class="keyword">new</span> NoeudDictionnaire(motOriginal,motTraduit);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            cpt++;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(arbre-&gt;mot.compare(motOriginal) == 0){ <span class="comment">//Si le mot est déjà présent on insère seulement ses traductions</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            arbre-&gt;traductions.push_back(motTraduit);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">if</span>( arbre-&gt;mot.compare(motOriginal) &gt; 0 ) <span class="comment">//Sinon on insère a gauche ou a droite</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        {   _auxInserer(arbre-&gt;gauche, motOriginal,motTraduit);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="keywordflow">if</span> ((_hauteur(arbre-&gt;gauche) - _hauteur(arbre-&gt;droite)) == 2) <span class="comment">//Équilibre</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <span class="keywordflow">if</span> (arbre-&gt;gauche-&gt;mot.compare(motOriginal) &gt; 0)</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    _zigZigGauche(arbre);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;               <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                    _zigZagGauche(arbre);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            } </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                arbre-&gt;hauteur = 1 + _maximum(_hauteur(arbre-&gt;gauche), _hauteur(arbre-&gt;droite));</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            _auxInserer(arbre-&gt;droite, motOriginal,motTraduit);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            <span class="keywordflow">if</span> ((_hauteur(arbre-&gt;droite) - _hauteur(arbre-&gt;gauche)) == 2)  <span class="comment">//Équilibre</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                <span class="keywordflow">if</span> ( arbre-&gt;droite-&gt;mot.compare(motOriginal) &lt;= 0) <span class="comment">// pour le cas d&#39;un doublon</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                    _zigZigDroit(arbre);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                } </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                    _zigZagDroit(arbre);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            } </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                arbre-&gt;hauteur = 1 + _maximum(_hauteur(arbre-&gt;droite), _hauteur(arbre-&gt;gauche));</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordtype">int</span> Dictionnaire:: _hauteur(elem noeud)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">if</span> (noeud == 0)</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">return</span> noeud-&gt;hauteur;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">int</span> Dictionnaire:: _maximum(<span class="keywordtype">int</span> ent1, <span class="keywordtype">int</span> ent2)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">if</span> (ent1 &lt;= ent2)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <span class="keywordflow">return</span> ent2;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordflow">return</span> ent1;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordtype">void</span> Dictionnaire:: _zigZigGauche(elem &amp;K2)</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        elem K1;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        K1 = K2-&gt;gauche;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        K2-&gt;gauche = K1-&gt;droite;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        K1-&gt;droite = K2;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        K2-&gt;hauteur = 1 + _maximum(_hauteur(K2-&gt;gauche), _hauteur(K2-&gt;droite));</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        K1-&gt;hauteur = 1 + _maximum(_hauteur(K1-&gt;gauche), K2-&gt;hauteur);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        K2 = K1;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordtype">void</span> Dictionnaire:: _zigZigDroit(elem &amp;K2)</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        elem K1;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        K1 = K2-&gt;droite;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        K2-&gt;droite = K1-&gt;gauche;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        K1-&gt;gauche = K2;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        K2-&gt;hauteur = 1 + _maximum(_hauteur(K2-&gt;droite), _hauteur(K2-&gt;gauche));</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        K1-&gt;hauteur = 1 + _maximum(_hauteur(K1-&gt;droite), K2-&gt;hauteur);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        K2 = K1;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordtype">void</span> Dictionnaire:: _zigZagGauche(elem &amp;K3)</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        _zigZigDroit(K3-&gt;gauche);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        _zigZigGauche(K3);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keywordtype">void</span> Dictionnaire:: _zigZagDroit(elem &amp; K3)</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    {</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        _zigZigGauche(K3-&gt;droite);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        _zigZigDroit(K3);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordtype">void</span>  Dictionnaire::_auxDetruire(Dictionnaire::elem &amp;t)</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">if</span> (t != 0)</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        {</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            _auxDetruire(t-&gt;gauche);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            _auxDetruire(t-&gt;droite);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            <span class="keyword">delete</span> t;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            cpt--;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            t= 0;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        }</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keywordtype">void</span> Dictionnaire::chargerDictionnaire(std::ifstream &amp;fichier)</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    {   </div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordtype">char</span> ligne[200];  <span class="comment">/* pour contenir une ligne lu dans le fichier */</span>  </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="keywordtype">char</span> *mot, *motTraduit; <span class="comment">/* le mot dans la langue original et sa traduction */</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordtype">char</span> *ptr;              <span class="comment">/* un pointeur de service */</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordtype">int</span> posT, posD; <span class="comment">/* pour identifier la position d&#39;un tilde ou d&#39;un double-point(:) */</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="keywordtype">bool</span> contexte;  <span class="comment">/* indique la présence d&#39;un contexte entre () juste après le mot original */</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordtype">char</span> *saveptr;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="comment">/* Vérifier si le fichier est correctement ouvert */</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keywordflow">if</span> (fichier == NULL)</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        {   </div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        }</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        </div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="comment">/* Lire le fichier et ajouter les mots leur(s) traduction(s) */</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        std::cout &lt;&lt;  <span class="stringliteral">&quot; Chargement du dictionnaire... &quot;</span> &lt;&lt;  std::endl;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="keywordflow">while</span> (!fichier. eof())</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        {</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;            <span class="comment">/* lecture d&#39;une ligne */</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            fichier.getline(ligne, 199);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            <span class="comment">/* Ignorer les lignes d&#39;en-tête */</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            <span class="keywordflow">if</span> (ligne[0] == <span class="charliteral">&#39;#&#39;</span>)</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            {</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            }</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            posT = 0;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            posD = 0;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            ptr = strchr(ligne, <span class="charliteral">&#39;~&#39;</span>);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <span class="keywordflow">if</span> (ptr != NULL)</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            {</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                posT = (ptr - ligne) / <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            }</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            ptr = strchr(ligne, <span class="charliteral">&#39;:&#39;</span>);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <span class="keywordflow">if</span> (ptr != NULL)</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            {</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                posD = (ptr - ligne) / <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            }</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            <span class="comment">/* Vérifier s&#39;il y a un contexte entre parenthèses  */</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            <span class="comment">/* tout de suite après le mot original              */</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            contexte = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            ptr = strchr(ligne, <span class="charliteral">&#39;\t&#39;</span>);</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;            <span class="keywordflow">if</span> (ptr != NULL)</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            {</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;                <span class="keywordflow">if</span> (*(ptr + 1) == <span class="charliteral">&#39;(&#39;</span>)</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;                {</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;                    contexte = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;                }</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            }</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            <span class="comment">/* Aller chercher le mot original */</span></div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            mot = strtok(ligne, <span class="stringliteral">&quot;\t&quot;</span>);</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        </div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <span class="comment">/* Passer le contexte s&#39;il y a lieu */</span></div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="keywordflow">if</span> (contexte == <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            {</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                ptr = strtok(NULL, <span class="stringliteral">&quot;()&quot;</span>);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            }</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            <span class="comment">/* Traiter les cas comme celui-ci :                                                           */</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            <span class="comment">/* a    un(e): ~ book = un livre. 2.(instead of number one) ~ year ago; il y a un an[Article] */</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            <span class="keywordflow">if</span> (posD &lt; posT)</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            {</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                motTraduit = strtok(NULL, <span class="stringliteral">&quot;:&quot;</span>);</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            }</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;            {</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                <span class="comment">/* Traiter les cas comme celui-ci :                 */</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                <span class="comment">/* abode    of no fixed ~ :sans domicile fixe[Noun] */</span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="keywordflow">if</span> (posT &lt; posD)</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                {</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                    ptr = strtok(NULL, <span class="stringliteral">&quot;:&quot;</span>);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                    motTraduit = strtok(NULL, <span class="stringliteral">&quot;([,;\n&quot;</span>);</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                }</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                {</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                    <span class="comment">/* obtenir la traduction */</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                    motTraduit = strtok(NULL, <span class="stringliteral">&quot;([,;\n&quot;</span>);</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                }</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;            }</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            </div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            std::string sMotTraduit = motTraduit;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            std::string sMot = mot;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            <a class="code" href="class_t_p2_p1_1_1_dictionnaire.html#a2fe841290d727a217fb884825bb736b7">ajouteMot</a>(sMot,sMotTraduit);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;            </div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;   </div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    }</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;}<span class="comment">//Fin du namespace</span></div>
+<div class="ttc" id="class_t_p2_p1_1_1_dictionnaire_html_a1fac45a536b034e0f9c18600159bfae4"><div class="ttname"><a href="class_t_p2_p1_1_1_dictionnaire.html#a1fac45a536b034e0f9c18600159bfae4">TP2P1::Dictionnaire::Dictionnaire</a></div><div class="ttdeci">Dictionnaire()</div><div class="ttdef"><b>Definition:</b> <a href="_dictionnaire_8cpp_source.html#l00018">Dictionnaire.cpp:18</a></div></div>
+<div class="ttc" id="class_t_p2_p1_1_1_dictionnaire_html_ab8f2a691b729b54115cd40256aa2ec00"><div class="ttname"><a href="class_t_p2_p1_1_1_dictionnaire.html#ab8f2a691b729b54115cd40256aa2ec00">TP2P1::Dictionnaire::~Dictionnaire</a></div><div class="ttdeci">~Dictionnaire()</div><div class="ttdef"><b>Definition:</b> <a href="_dictionnaire_8cpp_source.html#l00039">Dictionnaire.cpp:39</a></div></div>
+<div class="ttc" id="class_t_p2_p1_1_1_dictionnaire_html_aecfb98d1a69ab5a3adb9e6e649d46b9d"><div class="ttname"><a href="class_t_p2_p1_1_1_dictionnaire.html#aecfb98d1a69ab5a3adb9e6e649d46b9d">TP2P1::Dictionnaire::suggereCorrections</a></div><div class="ttdeci">std::vector&lt; std::string &gt; suggereCorrections(const std::string &amp;motMalEcrit)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionnaire_8cpp_source.html#l00083">Dictionnaire.cpp:83</a></div></div>
+<div class="ttc" id="class_t_p2_p1_1_1_dictionnaire_html_acc8506e31ea041e6b5de77cb9c2efec8"><div class="ttname"><a href="class_t_p2_p1_1_1_dictionnaire.html#acc8506e31ea041e6b5de77cb9c2efec8">TP2P1::Dictionnaire::appartient</a></div><div class="ttdeci">bool appartient(const std::string &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionnaire_8cpp_source.html#l00074">Dictionnaire.cpp:74</a></div></div>
+<div class="ttc" id="class_t_p2_p1_1_1_dictionnaire_html_a0912cee29c757ad7ea3456c7ea6d3a0e"><div class="ttname"><a href="class_t_p2_p1_1_1_dictionnaire.html#a0912cee29c757ad7ea3456c7ea6d3a0e">TP2P1::Dictionnaire::traduit</a></div><div class="ttdeci">std::vector&lt; std::string &gt; traduit(const std::string &amp;mot)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionnaire_8cpp_source.html#l00129">Dictionnaire.cpp:129</a></div></div>
+<div class="ttc" id="_dictionnaire_8h_html"><div class="ttname"><a href="_dictionnaire_8h.html">Dictionnaire.h</a></div><div class="ttdoc">Ce fichier contient l&#39;interface d&#39;un dictionnaire. </div></div>
+<div class="ttc" id="class_t_p2_p1_1_1_dictionnaire_html_a4cd52bdf5bfaaea2eb7c814bd96ba8c8"><div class="ttname"><a href="class_t_p2_p1_1_1_dictionnaire.html#a4cd52bdf5bfaaea2eb7c814bd96ba8c8">TP2P1::Dictionnaire::similitude</a></div><div class="ttdeci">double similitude(const std::string &amp;mot1, const std::string &amp;mot2)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionnaire_8cpp_source.html#l00097">Dictionnaire.cpp:97</a></div></div>
+<div class="ttc" id="class_t_p2_p1_1_1_dictionnaire_html_addc784e06d941ed8ab530da2b02e72fe"><div class="ttname"><a href="class_t_p2_p1_1_1_dictionnaire.html#addc784e06d941ed8ab530da2b02e72fe">TP2P1::Dictionnaire::supprimeMot</a></div><div class="ttdeci">void supprimeMot(const std::string &amp;motOriginal)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionnaire_8cpp_source.html#l00058">Dictionnaire.cpp:58</a></div></div>
+<div class="ttc" id="class_t_p2_p1_1_1_dictionnaire_html_a2fe841290d727a217fb884825bb736b7"><div class="ttname"><a href="class_t_p2_p1_1_1_dictionnaire.html#a2fe841290d727a217fb884825bb736b7">TP2P1::Dictionnaire::ajouteMot</a></div><div class="ttdeci">void ajouteMot(const std::string &amp;motOriginal, const std::string &amp;motTraduit)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionnaire_8cpp_source.html#l00049">Dictionnaire.cpp:49</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_bc2b495b0e4df4e04327641d0b1e06ea.html">Eric</a></li><li class="navelem"><a class="el" href="dir_379f84063da30960665de23f039348c5.html">Documents</a></li><li class="navelem"><a class="el" href="dir_dd7e9408b299fd1d9ae31e4ee73af1cc.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_da7db8dad76f0a516ed031c1f721f160.html">TP2_Structures_Donnees</a></li><li class="navelem"><a class="el" href="dir_2c4f6e5c645742271bb29dbd54b92595.html">TP2_Partie1</a></li><li class="navelem"><a class="el" href="_dictionnaire_8cpp.html">Dictionnaire.cpp</a></li>
+    <li class="footer">GÃ©nÃ©rÃ© le Lundi 30 Juin 2014 20:58:59 pour TP2_StructureDonnees par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

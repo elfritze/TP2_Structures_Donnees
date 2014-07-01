@@ -152,6 +152,7 @@ private:
 	    int hauteur;							// La hauteur de ce noeud (afin de maintenir l'équilibre de l'arbre AVL)
 
 		// Vous pouvez ajouter ici un constructeur de NoeudDictionnaire
+		NoeudDictionnaire( const std::string&motOriginal,const std::string&motTraduit ): mot( motOriginal ), gauche( 0 ), droite( 0 ), hauteur(0) {traductions.push_back(motTraduit); }
 	};
 
    typedef NoeudDictionnaire * elem;
@@ -161,6 +162,112 @@ private:
    int cpt;				// Le nombre de mots dans le dictionnaire
 
    //Vous pouvez ajouter autant de méthodes privées que vous voulez
+   std::vector<std::string> & _auxTraduit( elem & arbre,const std::string& mot);
+
+   /*
+	*\brief		Vérifier récursivement pour une corrections
+	*
+	*\post		Le dictionnaire est inchangé
+	*
+	*/
+   void _auxsuggereCorrections( elem & arbre,const std::string& motMalEcrit,double& min,std::vector<std::string> &corrections);
+
+
+   /*
+	*\brief		Vérifier récursivement pour un mot dans le dictionnaire
+	*
+	*\post		Le dictionnaire est inchangé
+	*
+	*/
+   elem _auxAppartient(elem arbre, const std::string &mot) const;
+   
+
+   /*
+	*\brief		Vérifier récursivement pour enlever un mot dans le dfictionnaire
+	*
+	*\post		L'élément est retiré du dictionnaire
+	*
+	*/
+   void _auxEnlever( elem &, const std::string&);
+
+     /*
+	*\brief		Retirer le plus petit élément du dictionnaire
+	*
+	*\post		L'élément est retiré du dictionnaire
+	*
+	*/
+   void _auxRetireMin( elem & arbre) const;
+
+    /*
+	*\brief		Détruire le dictionnaire
+	*
+	*\post		Le dictionnaire est détruit.
+	*
+	*/
+   void  _auxDetruire(elem &t);
+
+     /*
+	*\brief		Charger un dictionnaire avec un fichier texte
+	*
+	*\post		Le dictionnaire est chargé
+	*
+	*/
+   void chargerDictionnaire(std::ifstream &fichierEntree);
+
+
+     /*
+	*\brief		Insérer un élément récursivement
+	*
+	*\post		L'élément est inséré
+	*
+	*/
+   void _auxInserer( elem &, const std::string&,const std::string&);
+
+
+      /*
+	*\brief		Donne la hauteur d'un noeud.
+	*
+	*\post		Le dictionnaire est inchangé
+	*
+	*/
+   int _hauteur(elem noeud) const;
+
+     /*
+	*\brief		Donne le plus haut noeud
+	*
+	*\post		Le dictionnaire est inchangé
+	*
+	*/
+
+   int _maximum(int ent1, int ent2) const;
+
+   /**                       
+	 *  \brief Simple rotation - Déséquilibre gauche-gauche
+	 *
+	 * \post Le sous-arbre sous-tendu par le noeud critique est balancé
+	 */
+	void _zigZigGauche(elem &);
+
+	/**                       
+	 *  \brief Simple rotation - Déséquilibre droite-droite
+	 *
+	 * \post Le sous-arbre sous-tendu par le noeud critique est balancé
+	 */
+	void _zigZigDroit(elem &);
+
+	/**                       
+	 *  \brief Double rotation - Déséquilibre gauche-droite
+	 *
+	 * \post Le sous-arbre sous-tendu par le noeud critique est balancé
+	 */
+	void _zigZagGauche(elem &);
+
+	/**                       
+	 *  \brief Double rotation - Déséquilibre droite-gauche
+	 *
+	 * \post Le sous-arbre sous-tendu par le noeud critique est balancé
+	 */
+	void _zigZagDroit(elem &);
 };
 
 }
